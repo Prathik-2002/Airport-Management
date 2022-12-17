@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Mana</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.1/mdb.min.css" rel="stylesheet" />
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #title {
+            margin: 4rem;
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 id="title" style="text-align: center;">Welcome to E-Mana Airport Services <a href="/admin">a</a>
+        <a href="/addticket">t</a>
+    </h1>
+
+
+    <div style="min-width: 30%; margin: auto;">
+        <ul class="nav nav-pills nav-justified mb-3" id="ex1" role="tablist">
+            <li class="nav-item" role="presentation">
+                <a class="nav-link active" id="tab-login" data-mdb-toggle="pill" href="#pills-login" role="tab"
+                    aria-controls="pills-login" aria-selected="true">Login</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" id="tab-register" data-mdb-toggle="pill" href="#pills-register" role="tab"
+                    aria-controls="pills-register" aria-selected="false">Register</a>
+            </li>
+        </ul>
+
+        <div class="tab-content">
+            <div class="tab-pane fade show active" id="pills-login" role="tabpanel" aria-labelledby="tab-login">
+                <form>
+
+                    <div class="form-outline mb-4">
+                        <input type="email" id="loginName" class="form-control" />
+                        <label class="form-label" for="loginName">Email or username</label>
+                    </div>
+
+
+                    <div class="form-outline mb-4">
+                        <input type="password" id="loginPassword" class="form-control" />
+                        <label class="form-label" for="loginPassword">Password</label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-block mb-4">Sign in</button>
+
+                </form>
+            </div>
+            <div class="tab-pane fade" id="pills-register" role="tabpanel" aria-labelledby="tab-register">
+                <form>
+
+                    <div class="form-outline mb-4">
+                        <input type="text" id="registerFirstName" class="form-control" />
+                        <label class="form-label" for="registerFirstName">First Name</label>
+                    </div>
+
+                    <div class="form-outline mb-4">
+                        <input type="text" id="registerLastName" class="form-control" />
+                        <label class="form-label" for="registerLastName">Last Name</label>
+                    </div>
+
+
+                    <div class="form-outline mb-4">
+                        <input type="text" id="registerUsername" class="form-control" />
+                        <label class="form-label" for="registerUsername">Username</label>
+                    </div>
+
+                    <div class="form-outline mb-4">
+                        <input type="email" id="registerEmail" class="form-control" />
+                        <label class="form-label" for="registerEmail">Email</label>
+                    </div>
+
+                    <div class="form-outline mb-4">
+                        <input type="password" id="registerPassword" class="form-control" />
+                        <label class="form-label" for="registerPassword">Password</label>
+                    </div>
+
+                    <div class="form-outline mb-4">
+                        <input type="password" id="registerRepeatPassword" class="form-control" />
+                        <label class="form-label" for="registerRepeatPassword">Repeat password</label>
+                    </div>
+
+
+
+                    <button type="submit" class="btn btn-primary btn-block mb-3">Sign in</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+<script src=”https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js”
+    integrity=”sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo”
+    crossorigin=”anonymous”></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.1/mdb.min.js"></script>
+
+</html>
